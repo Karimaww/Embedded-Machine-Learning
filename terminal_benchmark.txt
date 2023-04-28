@@ -1,0 +1,36 @@
+Files already downloaded and verified
+The model will be running on cuda:0 device
+3.920097589492798  seconds in average for  10000.0  samples of testing data, for batch_size =  16
+Files already downloaded and verified
+The model will be running on cuda:0 device
+2.3362650871276855  seconds in average for  10000.0  samples of testing data, for batch_size =  32
+Files already downloaded and verified
+The model will be running on cuda:0 device
+1.9557678699493408  seconds in average for  10000.0  samples of testing data, for batch_size =  64
+Files already downloaded and verified
+The model will be running on cuda:0 device
+1.5554821491241455  seconds in average for  10000.0  samples of testing data, for batch_size =  128
+Files already downloaded and verified
+The model will be running on cuda:0 device
+1.3016109466552734  seconds in average for  10000.0  samples of testing data, for batch_size =  256
+Files already downloaded and verified
+The model will be running on cuda:0 device
+1.2306022644042969  seconds in average for  10000.0  samples of testing data, for batch_size =  512
+Files already downloaded and verified
+The model will be running on cuda:0 device
+1.2178726196289062  seconds in average for  10000.0  samples of testing data, for batch_size =  1024
+Files already downloaded and verified
+The model will be running on cuda:0 device
+1.339379072189331  seconds in average for  10000.0  samples of testing data, for batch_size =  2048
+Files already downloaded and verified
+The model will be running on cuda:0 device
+1.6768500804901123  seconds in average for  10000.0  samples of testing data, for batch_size =  4096
+Files already downloaded and verified
+The model will be running on cuda:0 device
+2.1650333404541016  seconds in average for  10000.0  samples of testing data, for batch_size =  8192
+[3.920097589492798, 2.3362650871276855, 1.9557678699493408, 1.5554821491241455, 1.3016109466552734, 1.2306022644042969, 1.2178726196289062, 1.339379072189331, 1.6768500804901123, 2.1650333404541016]
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-28610408'
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-28610408'
+28610408@ppti-14-502-15:/tempory/eML$ 
+
+

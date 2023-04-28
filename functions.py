@@ -14,6 +14,8 @@ from torch.autograd import Variable
 
 import torch.onnx 
 
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+
 
 # Function to save the model
 def saveModel(model):
@@ -31,6 +33,8 @@ def testAccuracy(model, test_loader):
     with torch.no_grad():
         for data in test_loader:
             images, labels = data
+            images = images.to(device)
+            labels = labels.to(device)
             # run the model on the test set to predict labels
             outputs = model(images)
             # the label with the highest energy will be our prediction
@@ -51,9 +55,7 @@ def train(model, num_epochs, train_loader, test_loader, optimizer, loss_fn):
     end_time = 0
     avg_time = 0
     
-    device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-    print("The model will be running on", device, "device")
-    model.to(device)
+
 
     for epoch in range(num_epochs):  # loop over the dataset multiple times
         running_loss = 0.0
@@ -62,8 +64,8 @@ def train(model, num_epochs, train_loader, test_loader, optimizer, loss_fn):
 
         for i, (images, labels) in enumerate(train_loader, 0):
             
-            images = Variable(images.to(device))
-            labels = Variable(labels.to(device))
+            images = images.to(device)
+            labels = labels.to(device)
 
             optimizer.zero_grad()
             outputs = model(images)
@@ -128,6 +130,8 @@ def testClassess():
     with torch.no_grad():
         for data in test_loader:
             images, labels = data
+            images = images.to(device)
+            labels = labels.to(device)
             outputs = model(images)
             _, predicted = torch.max(outputs, 1)
             c = (predicted == labels).squeeze()
