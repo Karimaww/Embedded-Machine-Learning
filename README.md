@@ -1,11 +1,14 @@
-# PLDAC - Embedded-Machine-Learning
-The objective of this project is to explore the possibilities of NVIDIA's Jetson Nano and coral dev Board mini for real-time video processing. The idea is to develop a processing pipeline for the autonomous driving of a small car robot (such as the GoPiGo) in order to compare the performance of different solutions (in terms of calculation time).
+# PLDAC - Embedded Machine Learning
+Embedded Machine Learning with PyTorch and Coral USB Accelerator
 
-The main steps of the project are as follows:
-- Getting to know the Jetson and coral platforms, and interfacing either hardware or software between the robot and the board;
-- Building a video processing pipeline using existing solutions: video flow acquisition and processing, segmentation algorithms, deep classification models
-- Developing a manual controller initially using the perceived information
-- If time allows, exploring Reinforcement Learning techniques for accomplishing a specific task.
+Explore the world of embedded machine learning with this project. We dive into the evaluation of deep learning models (ResNet, AlexNet, SqueezeNet, VGG) for object detection, measuring inference time and accuracy on both CPU and GPU Linux platforms using PyTorch. Additionally, we leverage Google's Coral USB Accelerator with pycoral to harness hardware acceleration for optimized inference. Dive into the world of edge computing and embedded AI with our in-depth analysis and findings.
+
+Key Highlights:
+
+🚀 Evaluation of deep learning models for object detection.
+💻 Inference time and accuracy comparisons on CPU and GPU.
+📡 Expertise in hardware acceleration using Coral USB Accelerator.
+📊 Quantitative analysis for data-driven model selection.
 
 ## Run on my terminal
 ```sh
