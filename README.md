@@ -6,8 +6,11 @@ Explore the world of embedded machine learning with this project. We dive into t
 Key Highlights:
 
 🚀 Evaluation of deep learning models for object detection.
+
 💻 Inference time and accuracy comparisons on CPU and GPU.
+
 📡 Expertise in hardware acceleration using Coral USB Accelerator.
+
 📊 Quantitative analysis for data-driven model selection.
 
 ## Run on my terminal
